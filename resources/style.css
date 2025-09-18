@@ -43,6 +43,11 @@ div.box nav {
 	font-weight: bold;
 }
 
+/* Pandoc and CSS make me mad separately, never mind together */
+figure {
+	margin: 0;
+}
+
 div.box nav a {
 	color: black;
 	text-decoration: none;
