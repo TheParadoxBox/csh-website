@@ -1,0 +1,53 @@
+body {
+	background-image: url("./images/Squam_Lake.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	max-width: 1248px;
+	margin: auto;
+	font-family: 'InterVariable', 'Inter', sans-serif;
+}
+
+div.box {
+	background-color: white;
+	border: 3px solid black;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 0 15% 0 15%;
+}
+
+h1, h2, h3, h4, h5, h6, figcaption {
+	text-align: center;
+}
+
+figcaption {
+	padding-top: 10px;
+}
+
+h1.title {
+	font-size: 40px;
+}
+
+div.box img {
+	width: 75%;
+	border: 3px solid black;
+	border-radius: 20px;
+	display: block;
+	margin: auto;
+}
+
+div.box nav {
+	font-size: 18pt;
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+div.box nav a {
+	color: black;
+	text-decoration: none;
+}
+
+div.box nav a:hover {
+	text-decoration: underline;
+}
