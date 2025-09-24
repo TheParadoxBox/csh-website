@@ -5,8 +5,9 @@ echo Starting build script...
 
 command -v pandoc >/dev/null 2>&1 || { echo "pandoc is not installed"; exit 1; }
 command -v sed    >/dev/null 2>&1 || { echo "sed is not installed"; exit 1; }
+command -v yq     >/dev/null 2>&1 || { echo "yq is not installed"; exit 1; }
 
-echo "pandoc and sed found"
+echo "pandoc, sed, and yq found"
 
 MD_DIR="markdown"
 RES_DIR="resources"
