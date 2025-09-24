@@ -1,4 +1,4 @@
-# Nick's CSH website (working title)
+# Nick's website @ CSH
 
 This is my next-gen website, hosted at <https://csh.rit.edu/~paradox>.
 
