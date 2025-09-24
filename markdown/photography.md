@@ -1,5 +1,6 @@
 ---
 title: Photography
+index: 4
 ---
 
 # My photos

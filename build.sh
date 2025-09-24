@@ -25,14 +25,26 @@ echo $PAGES
 
 # Build navbar
 nav=""
+tmp=$(mktemp)
+
+# Build weird name thingy so that they're ordered properly
 for f in $PAGES; do
-	title=$(sed -n 's/^title:[[:space:]]*//p' "$f")
-	page=$(basename "$f" .md).html
-	if [ -n "$nav" ]; then
-		nav="$nav | "
-	fi
-	nav="$nav<a href=\"$page\">$title</a>"
+	# The errors thrown by yq are harmless... let's hope this doesn't come back
+	# to bite me
+    idx=$(yq -r .index "$f" 2>/dev/null)
+    title=$(yq -r .title "$f" 2>/dev/null)
+    page=$(basename "$f" .md).html
+    echo "$idx|$title|$page" >> "$tmp"
 done
+
+# Sort by index
+while IFS="|" read -r idx title page; do
+    [ -n "$nav" ] && nav="$nav | "
+    nav="$nav<a href=\"$page\">$title</a>"
+done < <(sort -n "$tmp")
+
+rm "$tmp"
+
 
 echo Navbar generated:
 echo $nav

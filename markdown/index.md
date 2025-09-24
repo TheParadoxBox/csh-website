@@ -1,5 +1,6 @@
 ---
 title: Home
+index: 1
 ---
 
 # Hello, World!
