@@ -29,7 +29,7 @@ h1.title {
 }
 
 div.box img {
-	width: 75%;
+	max-width: 75%;
 	border: 3px solid black;
 	border-radius: 20px;
 	display: block;
@@ -46,6 +46,10 @@ div.box nav {
 /* Pandoc and CSS make me mad separately, never mind together */
 figure {
 	margin: 0;
+}
+
+figcaption {
+	padding-bottom: 10px;
 }
 
 div.box nav a {
