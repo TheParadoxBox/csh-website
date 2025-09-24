@@ -30,10 +30,8 @@ tmp=$(mktemp)
 
 # Build weird name thingy so that they're ordered properly
 for f in $PAGES; do
-	# The errors thrown by yq are harmless... let's hope this doesn't come back
-	# to bite me
-    idx=$(yq -r .index "$f" 2>/dev/null)
-    title=$(yq -r .title "$f" 2>/dev/null)
+    idx=$(sed -n '/^---$/,/^---$/p' $f | sed '/^---$/d' | yq -r '.index')
+    title=$(sed -n '/^---$/,/^---$/p' $f | sed '/^---$/d' | yq -r '.title')
     page=$(basename "$f" .md).html
     echo "$idx|$title|$page" >> "$tmp"
 done
