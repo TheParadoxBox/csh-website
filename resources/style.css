@@ -16,6 +16,7 @@ div.box {
 	padding: 0 15% 0 15%;
 }
 
+
 h1, h2, h3, h4, h5, h6, figcaption {
 	text-align: center;
 }
@@ -52,7 +53,7 @@ figcaption {
 	padding-bottom: 10px;
 }
 
-div.box nav a {
+div.box nav a, h1.title a {
 	color: black;
 	text-decoration: none;
 }
