@@ -17,7 +17,7 @@ I was born and raised in the Lakes Region of New Hampshire, aka the best place i
 
 In high school, I did band, drama, and robotics. I'm still trying to get into those at RIT, but mark my words, I will. My robotics team went to the FIRST Robotics Competition New England District Championship twice. I was also primarily responsible for creating the team's current branding, which I'm quite proud of.
 
-I don't consider myself fluent, but I speak a little Spanish. Me gustaría viajar a muchos países, pero quiero ir a algún país como México o Argentina para practicar español. Tengo una amiga online de Argentina. Conocimos jugando Minecraft hasta 2019.
+I don't consider myself fluent, but I speak a little Spanish. Me gustaría viajar a muchos países, pero quiero ir a algún país como México o Argentina para practicar español. Tengo una amiga en línea de Argentina. Conocimos jugando Minecraft hasta 2019.
 
 ## Where do we go now?
 
