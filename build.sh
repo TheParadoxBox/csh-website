@@ -17,6 +17,9 @@ RES_DIR="resources"
 
 # Make sure this exists before we start trying to put stuff there
 mkdir $OUTPUT_DIR
+rm -rf $OUTPUT_DIR/*
+
+echo Cleaned output directory $OUTPUT_DIR
 
 # Collect all markdown files
 PAGES=$(ls $MD_DIR/*.md)
