@@ -1,6 +1,6 @@
 ---
 title: "Music"
-index: 3
+index: 2
 ---
 
 # My music
@@ -14,7 +14,13 @@ Alternatively, you can check out my main playlist on Spotify. It's probably a lo
 <!-- ugly inline html incoming -->
 <iframe data-testid="embed-iframe" style="border-radius:12px;display:block;margin:auto" src="https://open.spotify.com/embed/playlist/5jkoFp7oTiP9Ao0ypR5jJT?utm_source=generator" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-## 2025-9-24: *Alice in Chains*, Alice in Chains
+I also recently made another playlist that reflects my tastes outside of rock music.
+
+<!-- gross! -->
+<iframe data-testid="embed-iframe" style="border-radius:12px;display:block;margin:auto" src="https://open.spotify.com/embed/playlist/1uPKX2M4YUfrMKHsGDSSBZ?utm_source=generator" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+## *Alice in Chains*, Alice in Chains
 
 ![](./images/aotw/tripod.jpg){ width=25% }
 
