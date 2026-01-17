@@ -1,11 +1,13 @@
 ---
-title: "Album of the Week"
+title: "Music"
 index: 3
 ---
 
-# Album of the Week...ish
+# My music
 
-Or, more accurately, "Album of the Whenever". I listen to a lot of music, and I'd like to share some that I think is really good. 
+I own a lot of music. My collection isn't the biggest in the world, but at around 15 CDs and more vinyl records than I care to remember, along with plenty of digital-only releases and compilations, it's pretty extensive.
+
+A significant portion of that is uploaded to my [members-only CSH website](https://members.csh.rit.edu/~paradox) for other CSHers to enjoy. Here, I want to catalogue everything that I've uploaded there. Releases are sorted alphabetically by artist name (always by first non-article; for example, Rob Zombie goes in R, not Z), then release date per-artist (e.g. Ride the Lightning before Master of Puppets).
 
 Alternatively, you can check out my main playlist on Spotify. It's probably a lot more representative of my taste in music than the cherry-picked albums here.
 

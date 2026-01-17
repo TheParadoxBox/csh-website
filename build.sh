@@ -9,7 +9,7 @@ command -v yq     >/dev/null 2>&1 || { echo "yq is not installed"; exit 1; }
 
 echo "pandoc, sed, and yq found"
 
-MD_DIR="markdown"
+SRC_DIR="site"
 RES_DIR="resources"
 
 # Only define this if it's not already defined
@@ -19,10 +19,10 @@ RES_DIR="resources"
 mkdir $OUTPUT_DIR
 rm -rf $OUTPUT_DIR/*
 
-echo Cleaned output directory $OUTPUT_DIR
+echo Created and cleaned output directory $OUTPUT_DIR
 
 # Collect all markdown files
-PAGES=$(ls $MD_DIR/*.md)
+PAGES=$(ls $SRC_DIR/*.md)
 
 echo Found pages:
 echo $PAGES
@@ -40,12 +40,14 @@ for f in $PAGES; do
 done
 
 # Sort by index
+sort -n "$tmp" > "$tmp.sorted"
+
 while IFS="|" read -r idx title page; do
     [ -n "$nav" ] && nav="$nav | "
     nav="$nav<a href=\"$page\">$title</a>"
-done < <(sort -n "$tmp")
+done < "$tmp.sorted"
 
-rm "$tmp"
+rm "$tmp" "$tmp.sorted"
 
 
 echo Navbar generated:
@@ -58,6 +60,14 @@ for f in $PAGES; do
 		--template="template.html" \
 		-V navbar="$nav"
 	echo Generated page $name.html in directory $OUTPUT_DIR
+done
+
+# Copy non-markdown files from SRC_DIR
+find "$SRC_DIR" -type f ! -name '*.md' | while IFS= read -r f; do
+    out="$OUTPUT_DIR/${f#$SRC_DIR/}"
+    mkdir -p "$(dirname "$out")"
+    cp "$f" "$out"
+    echo Copied file $out
 done
 
 # Copy extra stuff to output
