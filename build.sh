@@ -58,6 +58,7 @@ for f in $PAGES; do
 	name=$(basename "$f" .md)
 	pandoc "$f" -o "$OUTPUT_DIR/$name.html" \
 		--template="template.html" \
+        -V site-title="$(cat site-title.txt)" \
 		-V navbar="$nav" \
         -V head-content="$(cat head-content.html)" \
         -V foot-content="$(cat foot-content.html)"
